@@ -21,7 +21,8 @@ lazy val root = (project in file(".")).
       "org.mockito"%"mockito-core"%"2.8.9"%"test",
       "org.powermock"%"powermock-api-mockito2"%"1.7.3"%"test",
       "org.powermock"%"powermock-module-junit4"%"1.7.4"%Test,
-      "org.seleniumhq.selenium" % "selenium-java" % "2.35.0" % "test"
+      "org.seleniumhq.selenium" % "selenium-java" % "3.13.0" % "test"
+
 
 )
 
