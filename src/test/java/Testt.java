@@ -94,8 +94,8 @@ public class Testt {
         String idAsunto = "/html[1]/body[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[4]/table[1]/tbody[1]/tr[1]/td[2]/form[1]/div[3]/input[1]";
         WebElement txtAsunto = webDriverChrome.findElement(By.xpath(idAsunto));
         txtAsunto.sendKeys("Asunto de pruebaAutomatizada");
-        String idBotonSend = ":kk";
-        WebElement botonSend = webDriverChrome.findElement(By.id(idBotonSend));
+        String xPathBotonSend = "/html[1]/body[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[4]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/div[1]/div[4]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/div[2]";
+        WebElement botonSend = webDriverChrome.findElement(By.xpath(xPathBotonSend));
         botonSend.click();
     }
 
