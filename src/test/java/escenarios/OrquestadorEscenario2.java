@@ -6,8 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        glue = {"/home/s4n/practicaAutomatizacion/practicaAutomatizacion/src/test/java/escenarios"},
-        features = {"/home/s4n/practicaAutomatizacion/practicaAutomatizacion/src/test/java/escenarios"}
+        tags = {"@ejemplo2"}
         )
 public class OrquestadorEscenario2 {
 

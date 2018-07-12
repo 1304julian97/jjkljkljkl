@@ -9,9 +9,14 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(glue = {"/home/s4n/practicaAutomatizacion/practicaAutomatizacion/src/test/java/escenarios"},
-        features = {"/home/s4n/practicaAutomatizacion/practicaAutomatizacion/src/test/java/escenarios"})
+
+@CucumberOptions(
+        tags = {"@ejemplo3,@ejemplo1"}
+)
 public class OrquestadorEscenario1 {
+
+
+
 
 
 }

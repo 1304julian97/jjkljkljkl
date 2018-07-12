@@ -1,5 +1,6 @@
 Feature: Con table
 
+  @ejemplo2
   Scenario Outline: Compras
     Given Yo compro un <articulo> en una tienda
     When Cuando ingrese a "http://www.google.com"

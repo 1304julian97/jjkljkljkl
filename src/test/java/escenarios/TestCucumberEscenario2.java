@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.close;
 import static com.codeborne.selenide.Selenide.open;
 
-@CucumberOptions(features={"/home/s4n/practicaAutomatizacion/practicaAutomatizacion/src/test/java/escenarios"})
+@CucumberOptions(features = {"/Users/julian/git/practicaAutomatizacion/src/test/java/escenarios/escenario2.feature"})
 public class TestCucumberEscenario2 {
 
 

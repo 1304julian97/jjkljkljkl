@@ -14,8 +14,8 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-//@RunWith(Cucumber.class)
-@CucumberOptions(features={"/home/s4n/practicaAutomatizacion/practicaAutomatizacion/src/test/java/escenarios"})
+@CucumberOptions(tags = {"@ejemplo1"}
+)
 public class TestCucumberEscenario1 {
 
     @Given("^Dado que yo soy algo$")
@@ -34,9 +34,9 @@ public class TestCucumberEscenario1 {
         $("#lst-ib").setValue(arg1).pressEnter();
         ElementsCollection rtyrtyrty = $$("#ires");
         $$("#ires").findBy(text("Selenide: concise UI tests in Java")).click();
-        String xpathTitulo = "//article[@class='markdown-body entry-content']//h1";
+       /* String xpathTitulo = "//article[@class='markdown-body entry-content']//h1";
         $(By.xpath(xpathTitulo)).waitUntil(Condition.exist,5000);
-        close();
+        */close();
     }
 
 
