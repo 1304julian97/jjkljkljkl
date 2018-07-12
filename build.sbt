@@ -26,7 +26,8 @@ lazy val root = (project in file(".")).
       "io.cucumber" % "cucumber-java" % "2.0.0",
       "io.cucumber" % "cucumber-core" % "2.0.0",
       "io.cucumber" % "cucumber-junit" % "2.0.0" % Test,
-      "io.cucumber" % "gherkin" % "5.1.0"
+      "io.cucumber" % "gherkin" % "5.1.0",
+      "io.cucumber" % "cucumber-java8" % "2.0.0"
 
 
 )

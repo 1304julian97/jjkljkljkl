@@ -14,8 +14,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-@CucumberOptions(tags = {"@ejemplo1"}
-)
+//@CucumberOptions(tags = {"@ejemplo1"})
 public class TestCucumberEscenario1 {
 
     @Given("^Dado que yo soy algo$")
@@ -47,12 +46,12 @@ public class TestCucumberEscenario1 {
     }
 
     @When("^Ingrese a \"([^\"]*)\"$")
-    public void ingrese_a(String direccionUrl){
+    public void ingresehkhjhjkkjjkkjl_a(String direccionUrl){
         open(direccionUrl);
     }
 
     @Then("^deseo buscar el nombre \"([^\"]*)\"$")
-    public void deseo_buscar_el_nombre(String nombreABuscar) {
+    public void deseo_bukjjnnjkjljkkjlkjlljkscar_el_nombre(String nombreABuscar) {
         $("#lst-ib").setValue(nombreABuscar).pressEnter();
     }
 

@@ -6,7 +6,7 @@ Feature: Primer Feature
     When tenga el "Selenide" valido
     Then buscar el "Selenide" en google
 
-@ejemplo3
+  @ejemplo3
     Scenario: Buscar mi nombre en google
       Given dado el nombre "Julian"
       When Ingrese a "http://www.google.com"

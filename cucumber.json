@@ -1,0 +1,478 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Este es mi primer escenario",
+        "description": "",
+        "id": "primer-feature;este-es-mi-primer-escenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 121782768,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Dado que yo soy algo",
+            "match": {
+              "location": "TestCucumberEscenario1.dado_que_yo_soy_algo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2462329,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "tenga el \"Selenide\" valido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Selenide",
+                  "offset": 10
+                }
+              ],
+              "location": "TestCucumberEscenario1.tenga_el_valido(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13622648706,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "buscar el \"Selenide\" en google",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Selenide",
+                  "offset": 11
+                }
+              ],
+              "location": "TestCucumberEscenario1.buscar_el_en_google(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ejemplo1"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Buscar mi nombre en google",
+        "description": "",
+        "id": "primer-feature;buscar-mi-nombre-en-google",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 330769,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "dado el nombre \"Julian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Julian",
+                  "offset": 16
+                }
+              ],
+              "location": "TestCucumberEscenario1.dado_el_nombre(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4785035333,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Ingrese a \"http://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.google.com",
+                  "offset": 11
+                }
+              ],
+              "location": "TestCucumberEscenario1.ingresehkhjhjkkjjkkjl_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 273564182,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "deseo buscar el nombre \"Julian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Julian",
+                  "offset": 24
+                }
+              ],
+              "location": "TestCucumberEscenario1.deseo_bukjjnnjkjljkkjlkjlljkscar_el_nombre(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ejemplo3"
+          }
+        ]
+      }
+    ],
+    "name": "Primer Feature",
+    "description": "",
+    "id": "primer-feature",
+    "keyword": "Feature",
+    "uri": "escenarios/escenario1.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Compras",
+        "description": "",
+        "id": "con-table;compras;ropa;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 254572,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Yo compro un Camisa deportiva Nike en una tienda",
+            "match": {
+              "location": "TestCucumberEscenario2.yo_compro_un_Camisa_deportiva_Nike_en_una_tienda()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 416690877,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Cuando ingrese a \"http://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.google.com",
+                  "offset": 18
+                }
+              ],
+              "location": "TestCucumberEscenario2.cuando_ingresssssssssssssssssssssssse_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 730156457,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "yo busco su descripción PoliesterXYZ",
+            "match": {
+              "location": "TestCucumberEscenario2.yo_busco_su_descripción_PoliesterXYZ()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ejemplo2"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Compras",
+        "description": "",
+        "id": "con-table;compras;consumer-electronics;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 279367,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Yo compro un iPhone en una tienda",
+            "match": {
+              "location": "TestCucumberEscenario2.yo_compro_un_iPhone_en_una_tienda()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7183107935,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Cuando ingrese a \"http://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.google.com",
+                  "offset": 18
+                }
+              ],
+              "location": "TestCucumberEscenario2.cuando_ingresssssssssssssssssssssssse_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 757845567,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "yo busco su descripción X",
+            "match": {
+              "location": "TestCucumberEscenario2.yoLaDescripcionDeUnIphoneX()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ejemplo2"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Compras",
+        "description": "",
+        "id": "con-table;compras;consumer-electronics;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1027355,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Yo compro un Huawei en una tienda",
+            "match": {
+              "location": "TestCucumberEscenario2.yo_compro_un_Huawei_en_una_tienda()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6122994883,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Cuando ingrese a \"http://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.google.com",
+                  "offset": 18
+                }
+              ],
+              "location": "TestCucumberEscenario2.cuando_ingresssssssssssssssssssssssse_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 730343931,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "yo busco su descripción P10Lite",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 25
+                }
+              ],
+              "location": "TestCucumberEscenario2.yo_busco_su_descripción_P_Lite(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ejemplo2"
+          }
+        ]
+      }
+    ],
+    "name": "Con table",
+    "description": "",
+    "id": "con-table",
+    "keyword": "Feature",
+    "uri": "escenarios/escenario2.feature"
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Un escenerio que utilice Objetos",
+        "description": "",
+        "id": "escenarioconobjetos;un-escenerio-que-utilice-objetos",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 43292370,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "las siguientes personas:",
+            "match": {
+              "location": "TestEscenarioConObjetos.las_siguientes_personas(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Julian",
+                  "Carvajal",
+                  "1997"
+                ]
+              },
+              {
+                "cells": [
+                  "Alejandra",
+                  "Cadavid",
+                  "1995"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 8335325,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Su anio de nacimiento sea mayor a 1994",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1994",
+                  "offset": 34
+                }
+              ],
+              "location": "TestEscenarioConObjetos.su_anio_de_nacimiento_sea_mayor_a(int)"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 2632793,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "imprima el nombre de la persona con mas edad",
+            "match": {
+              "location": "TestEscenarioConObjetos.imprima_el_nombre_de_la_persona_con_mas_edad()"
+            },
+            "keyword": "Entonces "
+          },
+          {
+            "result": {
+              "duration": 2705598,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "también imprima su edad",
+            "match": {
+              "location": "TestEscenarioConObjetos.también_imprima_su_edad()"
+            },
+            "keyword": "Y "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ejemploObjetos"
+          }
+        ]
+      }
+    ],
+    "name": "EscenarioConObjetos",
+    "description": "",
+    "id": "escenarioconobjetos",
+    "keyword": "Característica",
+    "uri": "escenarios/escenarioConObjetos.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "suma de dos numeros",
+        "description": "",
+        "id": "ensyando-java8;suma-de-dos-numeros",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "un 1",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "se suma con otro 2",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "me debe de arrojar la respuesta correcta 3",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ejemploJava8"
+          }
+        ]
+      }
+    ],
+    "name": "Ensyando java8",
+    "description": "",
+    "id": "ensyando-java8",
+    "keyword": "Feature",
+    "uri": "escenarios/escenarioParaJava8.feature"
+  }
+]

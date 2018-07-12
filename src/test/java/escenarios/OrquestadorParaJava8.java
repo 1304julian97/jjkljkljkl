@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(tags = {"@ejemplo2"})
-public class OrquestadorEscenario2 {
-
+@CucumberOptions(
+        plugin = {"pretty", "html:reports/cucumber-html-report","json:cucumber.json"})
+public class OrquestadorParaJava8 {
 }
