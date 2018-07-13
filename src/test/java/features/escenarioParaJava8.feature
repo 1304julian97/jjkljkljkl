@@ -1,7 +1,7 @@
 
-Feature: Ensyando java8
+Feature: Ensyando java
 
-  @ejemploJava8
+  @java8
   Scenario: suma de dos numeros
     Given un 1
     When se suma con otro 2

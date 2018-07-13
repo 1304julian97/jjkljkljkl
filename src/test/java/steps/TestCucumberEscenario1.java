@@ -1,23 +1,35 @@
-package escenarios;
+package steps;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import cucumber.api.CucumberOptions;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import cucumber.api.junit.Cucumber;
-import org.junit.runner.RunWith;
+import cucumber.api.java8.En;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-//@CucumberOptions(tags = {"@ejemplo1"})
-public class TestCucumberEscenario1 {
 
-    @Given("^Dado que yo soy algo$")
+public class TestCucumberEscenario1  implements En{
+/*
+    public TestCucumberEscenario1()
+    {
+        Given("^Dado que yo soy algo$", () -> {
+            System.out.println("Given");
+        });
+
+        When("^tenga el \"([^\"]*)\" valido$", (String arg1) -> {
+        });
+
+        Then("^buscar el \"([^\"]*)\" en google$", (String arg1) -> {
+            // Write code here that turns the phrase above into concrete actions
+        });
+
+    }*/
+   @Given("^Dado que yo soy algo$")
     public void dado_que_yo_soy_algo(){
         // Write code here that turns the phrase above into concrete actions
     }
@@ -33,9 +45,9 @@ public class TestCucumberEscenario1 {
         $("#lst-ib").setValue(arg1).pressEnter();
         ElementsCollection rtyrtyrty = $$("#ires");
         $$("#ires").findBy(text("Selenide: concise UI tests in Java")).click();
-       /* String xpathTitulo = "//article[@class='markdown-body entry-content']//h1";
+        String xpathTitulo = "//article[@class='markdown-body entry-content']//h1";
         $(By.xpath(xpathTitulo)).waitUntil(Condition.exist,5000);
-        */close();
+       close();
     }
 
 
