@@ -23,7 +23,7 @@ lazy val root = (project in file(".")).
       "org.powermock"%"powermock-module-junit4"%"1.7.4"%Test,
       "org.seleniumhq.selenium" % "selenium-java" % "3.13.0" % "test",
       "com.codeborne" % "selenide" % "4.12.2",
-      "io.cucumber" % "cucumber-java" % "2.0.0",
+      //"io.cucumber" % "cucumber-java" % "2.0.0",
       "io.cucumber" % "cucumber-core" % "2.0.0",
       "io.cucumber" % "cucumber-junit" % "2.0.0" % Test,
       "io.cucumber" % "gherkin" % "5.1.0",

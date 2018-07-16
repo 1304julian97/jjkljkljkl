@@ -1,6 +1,7 @@
 Feature: Primer Feature
 
 
+  @_1
   Scenario: Este es mi primer escenario
     Given Dado que yo soy algo
     When tenga el "Selenide" valido
