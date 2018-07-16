@@ -26,8 +26,6 @@ public class TestEscenarioParaJava8 implements En {
         Then("^me debe de arrojar la respuestaa correcta (\\d+)$", (Integer arg1) -> {
             System.out.println("La respuesta es: "+arg1);
         });
-
-
     }
 
 }
