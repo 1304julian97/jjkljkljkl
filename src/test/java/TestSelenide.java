@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import java.util.Arrays;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.*;
 
 
@@ -22,6 +23,17 @@ public class TestSelenide {
         System.setProperty("webdriver.gecko.driver","./src/drivers/geckodriver");
         System.setProperty("webdriver.chrome.driver","./src/drivers/chromedriver");
        System.setProperty("selenide.browser", "Chrome");
+    }
+
+    @Test
+    public void search2(){
+        open("http://portal.gestiondelriesgo.gov.co/");
+        sleep(6000);
+        $(byXpath("//img[@src='/PublishingImages/Paginas/Forms/Recursos/MGRD.png']")).click();
+
+//switchTo().window(1);
+        sleep(5000);
+
     }
 
     @Test
@@ -46,7 +58,6 @@ public class TestSelenide {
 
     @Test
     public void search(){
-        int[] i  = {0};
         open("http://www.google.com");
         $("#lst-ib").setValue("Selenide").pressEnter();
         ElementsCollection rtyrtyrty = $$("#ires");

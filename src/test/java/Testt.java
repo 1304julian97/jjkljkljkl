@@ -1,11 +1,12 @@
 import io.vavr.control.Try;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -16,10 +17,11 @@ public class Testt {
     WebDriver webDriverChrome = null;
     WebDriver webDriverFireFox = null;
 
-    @Before
+    //@Before
     public void inicializarDriver()
     {
-        System.setProperty("webdriver.chrome.driver","/home/s4n/practicaAutomatizacion/chromedriver");
+
+        System.setProperty("webdriver.chrome.driver","./src/drivers/chromedriver");
         webDriverChrome = new ChromeDriver();
         webDriverChrome.manage().window().maximize();
     }
@@ -57,6 +59,22 @@ public class Testt {
         webDriverChrome.get("http://s4n.co/");
         WebElement nuestraOferta = webDriverChrome.findElement(By.xpath("//a[contains(text(),'Nuestra Oferta')]"));
         nuestraOferta.click();
+    }
+
+    @Test
+    public void verificarScrollConSelenium() throws InterruptedException {
+        System.setProperty("webdriver.gecko.driver","./src/drivers/geckodriver");
+        webDriverChrome = new FirefoxDriver();
+        webDriverChrome.get("http://shop.demoqa.com");
+        WebElement index = webDriverChrome.findElement(By.xpath("//*[@class='noo-search icon_search']"));
+        index.click();
+        WebElement buscador = webDriverChrome.findElement(By.name("s"));
+        buscador.sendKeys("DRESS");
+        buscador.sendKeys(Keys.ENTER);
+        Thread.sleep(5000);
+        WebElement webElement = webDriverChrome.findElement(By.xpath("(//div[contains(@class,'noo-product-item')])[11]"));
+        webElement.click();
+
     }
 
     @Test

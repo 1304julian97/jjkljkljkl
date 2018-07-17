@@ -7,7 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"./src/test/java/features"},
-        tags = {"@json"})
+        tags = {"@adjunto" +
+                ""})
 public class OrquestadorEscenario2 {
 
 }

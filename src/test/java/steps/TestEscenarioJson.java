@@ -1,18 +1,11 @@
 package steps;
 
 import com.google.gson.Gson;
-import cucumber.api.PendingException;
-import cucumber.api.java.es.Dado;
 import cucumber.api.java8.Es;
 import entidades.Persona;
-import io.vavr.control.Try;
-
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
