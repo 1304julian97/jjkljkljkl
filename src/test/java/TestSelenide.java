@@ -17,7 +17,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class TestSelenide {
 
-    @Before
+    //@Before
     public void configurarNavegador()
     {
         System.setProperty("webdriver.gecko.driver","./src/drivers/geckodriver");
@@ -27,13 +27,14 @@ public class TestSelenide {
 
     @Test
     public void search2(){
-        open("http://portal.gestiondelriesgo.gov.co/");
+        open("http://www.rionegro.gov.co/Paginas/calendario-tributario-2018.aspx");
         sleep(6000);
-        $(byXpath("//img[@src='/PublishingImages/Paginas/Forms/Recursos/MGRD.png']")).click();
-
-//switchTo().window(1);
-        sleep(5000);
-
+        $(byXpath("/html[1]/body[1]/form[1]/div[5]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[35]/a[1]/img[1]")).click();
+        switchTo().window(2).findElement(By.xpath("/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/nav[1]/ul[1]/li[3]/a[1]")).click();
+        //$(byXpath("/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/nav[1]/ul[1]/li[3]/a[1]")).click();
+        sleep(10000);
+        switchTo().window("calendario-tributario-2018");
+        sleep(7000);
     }
 
     @Test
