@@ -1,23 +1,28 @@
+import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.conditions.Text;
-import com.codeborne.selenide.impl.Navigator;
+import com.codeborne.selenide.SelenideElement;
+import io.vavr.collection.List;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 
-import java.util.Arrays;
-
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.CollectionCondition.allMatch;
+import static com.codeborne.selenide.CollectionCondition.anyMatch;
+import static com.codeborne.selenide.CollectionCondition.noneMatch;
+import static com.codeborne.selenide.Condition.match;
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.*;
 
 
 public class TestSelenide {
 
-    //@Before
+    public TestSelenide()
+    {
+        System.out.println("helloo");
+    }
+
+
+    @Before
     public void configurarNavegador()
     {
         System.setProperty("webdriver.gecko.driver","./src/drivers/geckodriver");
@@ -59,12 +64,50 @@ public class TestSelenide {
 
     @Test
     public void search(){
-        open("http://www.google.com");
-        $("#lst-ib").setValue("Selenide").pressEnter();
-        ElementsCollection rtyrtyrty = $$("#ires");
-        $$("#ires").findBy(text("Selenide: concise UI tests in Java")).click();
-        String xpathTitulo = "//article[@class='markdown-body entry-content']//h1";
-        $(By.xpath(xpathTitulo)).waitUntil(Condition.exist,5000);
+        open("https://demoqa.com/automation-practice-table/");
+        SelenideElement selenideElement = $x("//tr[4]//td[6]/a");
+        $x("//tr[4]//td[6]").$x("tr").should(match("all should be the same", x-> {
+            System.out.println(x.toString());
+            return x.getText().equals("details");
+        }));
+
+    }
+
+    @Test
+    public void search3(){
+        open("https://demoqa.com/automation-practice-table/");
+        SelenideElement selenideElement = $x("//td");
+        $x("//td").should(match("all should be the same", x-> {
+            System.out.println(x.getText());
+            return x.getText().equals("details");
+        }));
+
+    }
+
+    @Test
+    public void sibling(){
+        open("https://demoqa.com/automation-practice-table/");
+        SelenideElement selenideElement = $x("//table[@class='tsc_table_s13']/tbody/tr/th").sibling(0);
+        List<SelenideElement> lista = List.range(0, 7).map(x-> $x("//table[@class='tsc_table_s13']/tbody/tr/th").sibling(x));
+        List.range(0,7).zip(lista).forEach(x-> System.out.println(x._1+" -> "+x._2.getText()));
+
+
+    }
+
+    @Test
+    public void parent(){
+        open("https://demoqa.com/automation-practice-table/");
+        SelenideElement selenideElement = $x("//table[@class='tsc_table_s13']/tbody/tr/th").parent().parent().parent();
+        selenideElement.shouldHave(Condition.cssClass("tsc_table_s13"));
+
+    }
+
+    @Test
+    public void preceding(){
+        open("https://demoqa.com/automation-practice-table/");
+        List<SelenideElement> map = List.range(0, 4).map(x -> $x("//table[@class='tsc_table_s13']/tbody/tr/td[5]").preceding(x));
+        List.range(0,4).zip(map).forEach(x-> System.out.println(x._1+" -> "+x._2.getText()));
+
     }
 
 
