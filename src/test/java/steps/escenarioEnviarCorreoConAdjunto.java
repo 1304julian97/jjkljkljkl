@@ -6,6 +6,7 @@ import cucumber.api.java.es.Dado;
 import cucumber.api.java8.Es;
 import io.vavr.control.Try;
 import org.bouncycastle.asn1.cms.ecc.MQVuserKeyingMaterial;
+import org.junit.Test;
 import org.openqa.selenium.By;
 
 import java.awt.*;
